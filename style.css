@@ -1,0 +1,263 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+/* body style */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    margin-top: 50px;
+}
+
+/* Top Banner section style */
+.container {
+    background-color: rgb(36, 34, 34);
+    width: 80%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 25px 60px 0px 60px;
+    justify-content: center;
+    margin: auto;
+}
+
+.col-2 {
+    color: white;
+
+}
+
+.col-2 img {
+    width: 100%;
+
+}
+
+.col-2 h1 {
+    font-size: 65px;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.col-2 p {
+    margin-bottom: 30px;
+}
+
+.watch-live-btn {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.fa-right {
+    background-color: aqua;
+    color: antiquewhite;
+}
+
+/* Top Banner section End */
+
+/* secund section start */
+/* this is right side naver */
+.containers {
+    width: 88%;
+    margin: auto;
+    display: flex;
+}
+
+.nav-bar {
+    width: 25%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 35px;
+    margin-right: 10px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin: 8px;
+    text-align: center;
+}
+
+.nav-bar-tablate {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 25px;
+    display: none;
+}
+
+.nav-bar-tablate a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+
+
+/* navbar end */
+/* blog */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog {
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid rgb(212, 207, 207);
+    border-radius: 10px;
+}
+
+.blog img {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.blog a {
+    width: 30%;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(27, 26, 26);
+}
+
+.duration-comment {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mobile view responsive */
+@media only screen and (max-width:567px) {
+
+    /* Top Banner section */
+    .container {
+        width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-2 {
+        text-align: center;
+    }
+
+    .col-2 img {
+        padding-top: 30px;
+
+    }
+
+    .col-2 h1 {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    .col-2 p {
+        margin-bottom: 40px;
+    }
+
+    .col-2 p span {
+        display: none;
+    }
+
+    /* Top Banner section End */
+    /* navbar */
+    .nav-bar a {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar-tablate {
+        display: block;
+    }
+
+    .nav-bar-tablate a {
+        margin-top: 8px;
+        display: block;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+
+/* Tablate view  */
+@media only screen and (min-width:567px) and (max-width:992px) {
+
+    /* Top Banner section */
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col-2 h1 {
+        font-size: 8vh;
+        line-height: 35px;
+        font-weight: 600;
+    }
+
+    .col-2 p {
+        margin-bottom: 40px;
+    }
+
+    .col-2 p span {
+        display: none;
+    }
+
+    .watch-live-btn {
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        padding: 10px 40px;
+        font-size: 20px;
+    }
+
+    /* Top Banner section End */
+
+    /* navbar */
+    .nav-bar a {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar-tablate {
+        display: block;
+    }
+
+    .nav-bar-tablate a {
+        padding: 10px 20px;
+        margin-left: 5px;
+        display: block;
+        float: left;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
